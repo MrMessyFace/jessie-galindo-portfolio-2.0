@@ -1,12 +1,17 @@
-import './App.css';
+import Navbar from '../navbar/Navbar'
+import AboutMe from '../aboutme/AboutMe'
+import Portfolio from '../portfolio/Portfolio'
+import Footer from '../footer/Footer'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <AboutMe />
-      <ContactInfo />
       <Portfolio />
+      <br></br>
+      <br></br>
       <Footer />
     </div>
   );
