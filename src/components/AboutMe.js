@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="about-section">
-      <h2 id="About-Me">About Me</h2>
+    <div id="About-Me" className="about-section">
+      <h2>About Me</h2>
       <div className="about">
         <div className="aboutimg">
           <img src={require("../assets/images/sioux-city.jpg")}></img>

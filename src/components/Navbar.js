@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import pdf from "../assets/pdfs/jessie-galindo-resume-2023.pdf";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="#About-Me">About</a>
-      <a href="#Contact">Contact</a>
-      <a href="#index.html">
+      <a href="#Portfolio">Portfolio</a>
+      <Link to="/">
         <img
           src={require("../assets/images/jessie-galindo-avatar.jpg")}
           alt="Jessie Galindo"
         ></img>
-      </a>
-      <a href="#Portfolio">Portfolio</a>
+      </Link>
+      <a href="#Contact">Contact</a>
       {/* <div>
         <button >Outside Work</button>
         <div>
