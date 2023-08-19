@@ -1,85 +1,72 @@
 import React from "react";
+import emailjs from "emailjs-com";
+import { Form, Input, TextArea, Button } from "semantic-ui-react";
+import Swal from "sweetalert2";
+
+const SERVICE_ID = "service_v6kdf06";
+const TEMPLATE_ID = "template_4c53386";
+const USER_ID = "Qmyr4e4b7RrPEDXZB";
 
 const Contact = () => {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully",
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: "error",
+          title: "Ooops, something went wrong",
+          text: error.text,
+        });
+      }
+    );
+    e.target.reset();
+  };
+
   return (
-    <div id="Contact" className='contact'>
+    <div id="Contact" className="contact-section">
       <h2>Contact</h2>
-      <div>
-        <form name="contact" method="POST">
-          <input type="hidden" name="form-name" value="contact" />
-          <div>
-            <input type="hidden" name="form-name" value="contact" />
-            <label htmlFor="first-name">First name</label>
-            <div>
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                autoComplete="given-name"
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <label htmlFor="last-name">Last name</label>
-            <div>
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                autoComplete="family-name"
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <div>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <label htmlFor="phone-number">Phone Number</label>
-            <div>
-              <div>
-                <label htmlFor="country">Country</label>
-                <select id="country" name="country">
-                  <option>US</option>
-                  <option>CA</option>
-                  <option>EU</option>
-                </select>
-              </div>
-              <input
-                type="text"
-                name="phone-number"
-                id="phone-number"
-                autoComplete="tel"
-                placeholder="+1 (555) 867-5309"
-              />
-            </div>
-          </div>
-          <div>
-            <label htmlFor="message">Message</label>
-            <div>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                defaultValue={""}
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <button type="submit">Send</button>
-          </div>
-        </form>
+      <div className="contact-form">
+        <Form onSubmit={handleOnSubmit}>
+          <Form.Field
+            id="form-input-control-email"
+            control={Input}
+            label="Email"
+            name="user_email"
+            placeholder="Email here."
+            required
+            icon="mail"
+            iconPosition="left"
+          />
+          <Form.Field
+            id="form-input-control-last-name"
+            control={Input}
+            label="Name"
+            name="user_name"
+            placeholder="Name here."
+            required
+            icon="user circle"
+            iconPosition="left"
+          />
+          <Form.Field
+            id="form-textarea-control-opinion"
+            control={TextArea}
+            label="Message"
+            name="user_message"
+            placeholder="Message here."
+            required
+          />
+          <Button type="submit" color="green">
+            Submit
+          </Button>
+        </Form>
       </div>
     </div>
   );
