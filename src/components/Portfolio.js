@@ -269,7 +269,7 @@ const Portfolio = () => {
           </p>
         </div>
       </div>
-      <Link to="/more-portfolio">More Portfolio</Link>
+      {/* <Link to="/more-portfolio">More Portfolio</Link> */}
     </div>
   );
 };
