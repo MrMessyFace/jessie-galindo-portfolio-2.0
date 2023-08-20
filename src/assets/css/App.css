@@ -137,7 +137,7 @@ body {
   -webkit-text-stroke: 3px green;
 }
 
-.about-section {
+.about-section, .not-found-section {
   display: flex;
   flex-direction: column;
   flex-wrap: column;
