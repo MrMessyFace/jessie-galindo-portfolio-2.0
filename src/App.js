@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
-// import MorePortfolioPage from "./pages/MorePortfolioPage";
+import MorePortfolioPage from "./pages/MorePortfolioPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import "./assets/css/App.css";
 
@@ -18,7 +18,7 @@ function App() {
           <Route path="/about" component={AboutPage} />
           <Route path="/portfolio" exact component={PortfolioPage} />
           <Route path="/contact" component={ContactPage} />
-          {/* <Route path="/more-portfolio" component={MorePortfolioPage} /> */}
+          <Route path="/more-portfolio" component={MorePortfolioPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </Layout>
