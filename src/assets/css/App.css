@@ -8,7 +8,6 @@ body {
   background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
 }
 
 .container {
@@ -20,24 +19,19 @@ body {
   padding-bottom: 50px;
 }
 
-.navbar {
+.navbar,
+.footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
+  justify-content: space-around;
   background-color: green;
+}
+
+.navbar {
+  align-items: center;
   border-bottom: 3px solid white;
 }
 
-.navbar-left {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .navbar-image {
-  display: flex;
   margin-left: 20px;
 }
 
@@ -49,44 +43,41 @@ body {
 
 .navbar-right {
   display: flex;
-  flex-direction: row;
   align-items: baseline;
   font-size: 20px;
   font-weight: bold;
   margin-right: 10px;
 }
 
-.navbar-right a {
+.navbar-right a,
+.dropdown-content a,
+.portfolio-section a {
   color: white;
   text-decoration: none;
+}
+
+.navbar-right a,
+.dropdown-menu,
+.link-icon {
   margin-left: 5px;
   margin-right: 5px;
 }
 
 .navbar-right a:hover,
-.dropdown-menu:hover, .link-icon a:hover {
+.dropdown-menu:hover,
+.link-icon a:hover {
   color: black;
-}
-
-.dropdown-menu {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .dropdown-menu:hover .dropdown-content {
   display: flex;
   flex-direction: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background-color: green;
   color: white;
 }
 
 .dropdown-button {
   display: flex;
-  align-items: baseline;
   background-color: inherit;
   color: white;
   font-size: 20px;
@@ -104,25 +95,16 @@ body {
 .dropdown-content a {
   display: flex;
   flex-direction: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 18px;
-  color: white;
-  text-decoration: none;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
-  flex-flow: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  font-weight: bold;
   margin-top: 250px;
 }
 
@@ -137,13 +119,13 @@ body {
   -webkit-text-stroke: 3px green;
 }
 
-.about-section, .not-found-section {
+.about-section,
+.portfolio-section,
+.contact-section,
+.not-found-section {
   display: flex;
   flex-direction: column;
-  flex-wrap: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .about-section h2,
@@ -157,19 +139,12 @@ body {
 
 .about {
   display: flex;
-  flex-direction: row;
-  flex-wrap: row;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 24px;
 }
 
 .aboutimg {
-  display: flex;
   flex-direction: column;
-  flex-wrap: column;
-  justify-content: center;
   align-items: center;
   width: 50%;
 }
@@ -182,9 +157,6 @@ body {
 .aboutme {
   display: flex;
   flex-direction: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
   width: 50%;
   margin-right: 120px;
 }
@@ -193,59 +165,20 @@ body {
   font-size: 36px;
 }
 
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-}
-
-.contact-form {
-  width: 500px;
-}
-
-.contact-form Form {
-  background-color: white;
-  border: 5px solid green;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.portfolio-section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
 .portfolio-section a {
-  color: white;
-  text-decoration: none;
   font-weight: bold;
   font-size: 22px;
 }
 
 .portfolio-row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  flex-wrap: column;
-  align-items: center;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -261,6 +194,11 @@ body {
   margin-bottom: 5px;
 }
 
+.portfolio-section a:hover,
+.portfolio-item a:hover {
+  color: green;
+}
+
 .portfolio-item img {
   height: 225px;
   width: 300px;
@@ -268,16 +206,50 @@ body {
   border-radius: 10px;
 }
 
-.portfolio-section a:hover, .portfolio-item a:hover {
+.contact-section {
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-form {
+  width: 500px;
+}
+
+.contact-form Form {
+  background-color: white;
+  border: 5px solid green;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.not-found-section h1 {
+  font-size: 150px;
   color: green;
-  cursor: pointer;
+  -webkit-text-stroke: 3px white;
+  margin-top: 75px;
+}
+
+.not-found-section h2 {
+  font-size: 80px;
+  -webkit-text-stroke: 3px green;
+}
+
+.not-found-section h3 {
+  font-size: 36px;
+  color: green;
+}
+
+.not-found-section h4 {
+  font-size: 24px;
+}
+
+.not-found-section h5 {
+  font-size: 18px;
+  color: green;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
   position: absolute;
-  background-color: green;
   font-weight: bold;
   height: 50px;
   bottom: 0;
@@ -287,80 +259,13 @@ body {
 .copyright,
 .socials {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-flow: row;
 }
 
 .copyright {
-  color: white;
   font-size: 14px;
-}
-
-.link-icon {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .link-icon a {
   color: white;
 }
-
-@media screen and (max-width: 980px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
-  }
-
-  header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
-  }
-
-  header nav {
-    justify-content: center;
-  }
-
-  .page-section > h2,
-  .page-section > div {
-    flex: 0 0 100%;
-  }
-
-  .page-section > h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
-  }
-
-  .flex-item:first-child {
-    min-height: 150px;
-  }
-
-  .hero-banner {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
