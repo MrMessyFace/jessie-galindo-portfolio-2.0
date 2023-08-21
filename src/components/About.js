@@ -17,9 +17,9 @@ const About = () => {
             I am a full stack web developer, amateur graphic designer,
             podcaster, and creative writer working out of Sioux City, Iowa. I
             have a passion for creating things and I am always looking for new
-            ways to express myself. I am a graduate of Northwestern University
-            Full Stack Coding Bootcamp. I am currently seeking a position as a
-            full stack web developer.
+            ways to express myself. I am a graduate of the Northwestern
+            University Full Stack Coding Bootcamp. I am currently seeking a
+            position as a full stack web developer.
           </p>
           <br></br>
           <p>

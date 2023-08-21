@@ -68,6 +68,33 @@ const Contact = () => {
           </Button>
         </Form>
       </div>
+      <div className="contact-info">
+        <p>
+          <a href="emailto:jessiesgalindo@gmail.com" title="Email Me">
+            <i className="fa-solid fa-envelope fa-2xl"></i>
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/jessie-galindo-09418092/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+          >
+            <i className="fa-brands fa-linkedin-in fa-2xl" alt="LinkedIn"></i>
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/MrMessyFace"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub"
+          >
+            <i className="fa-brands fa-github fa-2xl" alt="GitHub"></i>
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

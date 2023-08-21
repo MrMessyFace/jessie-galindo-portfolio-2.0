@@ -195,14 +195,14 @@ body {
 }
 
 .portfolio-section a:hover,
-.portfolio-item a:hover {
+.portfolio-item a:hover, .contact-info a:hover {
   color: green;
 }
 
 .portfolio-item img {
   height: 225px;
   width: 300px;
-  border: 5px solid green;
+  border: 5px solid white;
   border-radius: 10px;
 }
 
@@ -220,6 +220,13 @@ body {
   border: 5px solid green;
   border-radius: 10px;
   padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  margin-top: 100px;
 }
 
 .not-found-section h1 {
@@ -266,6 +273,6 @@ body {
   font-size: 14px;
 }
 
-.link-icon a {
+.contact-info a, .link-icon a {
   color: white;
 }

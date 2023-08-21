@@ -6,38 +6,49 @@ const Portfolio = () => {
     <div id="Portfolio" className="portfolio-section">
       <h2>Portfolio</h2>
       <div className="portfolio-row">
-        <div className="portfolio-item">
-          <h3>Hoop Wizard</h3>
+        {/* <div className="portfolio-item">
+          <h3>Messed Up Wrestling Podcast</h3>
           <a
-            href="https://truck-norris.github.io/hoop-wizard/"
+            href="https://github.com/MrMessyFace/messed-up-wrestling-podcast"
             target="_blank"
             rel="noopener noreferrer"
-            title="Hoop Wizard"
+            title="The Messed Up Wrestling Podcast"
           >
             <img
-              src={require("../assets/images/hoop-wizard-screenshot.jpg")}
-              alt="Hoop Wizard"
+              src={require("../assets/images/coming-soon.jpg")}
+              alt="Coming Soon"
             ></img>
           </a>
           <p>
-            An NBA themed YouTube video and Giphy generator.{" "}
+            Homepage of The Messed Up Wrestling Podcast.{" "}
             <a
-              href="https://github.com/truck-norris/hoop-wizard"
+              href="https://github.com/MrMessyFace/messed-up-wrestling-podcast"
               target="_blank"
               rel="noopener noreferrer"
-              title="Hoop Wizard GitHub Repo"
+              title="The Messed Up Wrestling Podcast GitHub Repo"
             >
               <i className="fa-brands fa-github" alt="Github"></i>
             </a>
           </p>
           <p>
-            Technologies used:{" "}
-            <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
+            Technologies used: React Router Dom,{" "}
+            <i
+              className="fa-brands fa-react"
+              alt="React JS"
+              title="React JS"
+            ></i>
+            , <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
             <i className="fa-brands fa-css3" alt="CSS 3" title="CSS 3"></i>,{" "}
             <i
               className="fa-brands fa-js"
-              alt="Javascript"
+              alt="JavaScript"
               title="JavaScript"
+            ></i>
+            ,{" "}
+            <i
+              className="fa-brands fa-node-js"
+              alt="Node.JS"
+              title="Node.JS"
             ></i>
             , and{" "}
             <i
@@ -47,34 +58,49 @@ const Portfolio = () => {
             ></i>
             .
           </p>
-        </div>
-        <div className="portfolio-item">
-          <h3>Note Taker</h3>
+        </div> */}
+        {/* <div className="portfolio-item">
+          <h3>NetMinder</h3>
           <a
-            href="https://notes-app-jg2023.herokuapp.com/"
+            href="https://netminder-frontend-c2d1f8e64193.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            title="Note Taker"
+            title="NetMinder"
           >
             <img
-              src={require("../assets/images/note-taker-screenshot.jpg")}
-              alt="Note Taker"
+              src={require("../assets/images/netminder-screenshot.jpg")}
+              alt="NetMinder"
             ></img>
           </a>
           <p>
-            A note taking app.{" "}
+            A professional networking reminder app that helps remind you to
+            contact colleagues or clients to further network yourself.{" "}
             <a
-              href="https://github.com/MrMessyFace/note-taker"
+              href="https://github.com/React-Rangers/netminder-frontend"
               target="_blank"
               rel="noopener noreferrer"
-              title="Note Taker GitHub Repo"
+              title="NetMinder Front End GitHub Repo"
+            >
+              <i className="fa-brands fa-github" alt="Github"></i>
+            </a>{" "}
+            <a
+              href="https://github.com/React-Rangers/netminder-backend"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="NetMinder Back End GitHub Repo"
             >
               <i className="fa-brands fa-github" alt="Github"></i>
             </a>
           </p>
           <p>
-            Technologies used: Express.JS,{" "}
-            <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
+            Technologies used: Apollo, Ant Design, Express.JS, GraphQL, JSON Web
+            Token, MongoDB, Mongoose, React Router Dom,{" "}
+            <i
+              className="fa-brands fa-react"
+              alt="React JS"
+              title="React JS"
+            ></i>
+            , <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
             <i className="fa-brands fa-css3" alt="CSS 3" title="CSS 3"></i>,{" "}
             <i
               className="fa-brands fa-js"
@@ -101,8 +127,50 @@ const Portfolio = () => {
             ></i>
             .
           </p>
-        </div>
+        </div> */}
         <div className="portfolio-item">
+          <h3>Just Another Text Editor</h3>
+          <a
+            href="https://young-ocean-37817-b9df5f618cd6.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Just Another Text Editor"
+          >
+            <img
+              src={require("../assets/images/just-another-text-editor-screenshot.jpg")}
+              alt="Just Another Text Editor"
+            ></img>
+          </a>
+          <p>
+            A text editor that uses PWA technology to save your work offline.{" "}
+            <a
+              href="https://github.com/MrMessyFace/just-another-text-editor"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Just Another Text Editor GitHub Repo"
+            >
+              <i className="fa-brands fa-github" alt="Github"></i>
+            </a>
+          </p>
+          <p>
+            Technologies used: Express.JS,{" "}
+            <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
+            <i className="fa-brands fa-css3" alt="CSS3" title="CSS 3"></i>,{" "}
+            <i
+              className="fa-brands fa-js"
+              alt="JavaScript"
+              title="JavaScript"
+            ></i>
+            , and{" "}
+            <i
+              className="fa-brands fa-node-js"
+              alt="Node.JS"
+              title="Node.JS"
+            ></i>
+            .
+          </p>
+        </div>
+        {/* <div className="portfolio-item">
           <h3>Resume-Pocalypse</h3>
           <a
             href="https://resume-pocalypse.herokuapp.com/"
@@ -156,35 +224,77 @@ const Portfolio = () => {
             ></i>
             .
           </p>
-        </div>
+        </div> */}
         <div className="portfolio-item">
-          <h3>Just Another Text Editor</h3>
+          <h3>Tech Blog</h3>
           <a
-            href="https://young-ocean-37817-b9df5f618cd6.herokuapp.com/"
+            href="https://tech-blog-jg2023-1d9dc6a7613a.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            title="Just Another Text Editor"
+            title="Tech Blog"
           >
             <img
-              src={require("../assets/images/just-another-text-editor-screenshot.jpg")}
-              alt="Just Another Text Editor"
+              src={require("../assets/images/tech-blog-screenshot.jpg")}
+              alt="Tech Blog"
             ></img>
           </a>
           <p>
-            A text editor that uses PWA technology to save your work offline.{" "}
+            A blog site specifically about tech stuff.{" "}
             <a
-              href="https://github.com/MrMessyFace/just-another-text-editor"
+              href="https://github.com/MrMessyFace/tech-blog"
               target="_blank"
               rel="noopener noreferrer"
-              title="Just Another Text Editor GitHub Repo"
+              title="Tech Blog GitHub Repo"
+            >
+              <i className="fa-brands fa-github" alt="GitHub"></i>
+            </a>
+          </p>
+          <p>
+            Technologies used: Express.JS, Express Handlebars, MySQL2,
+            Sequelize, Bcrypt,{" "}
+            <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
+            <i className="fa-brands fa-css3" alt="CSS 3" title="CSS 3"></i>,{" "}
+            <i
+              className="fa-brands fa-js"
+              alt="Javascript"
+              title="JavaScript"
+            ></i>
+            , and{" "}
+            <i
+              className="fa-brands fa-node-js"
+              alt="Node.JS"
+              title="Node.JS"
+            ></i>
+            .
+          </p>
+        </div>
+        <div className="portfolio-item">
+          <h3>E-Commerce Back-End</h3>
+          <a
+            href="https://drive.google.com/file/d/1AIYmVwSAagZvlUFugtgvL0bzH1gItOD7/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="E-Commerce Back-End"
+          >
+            <img
+              src={require("../assets/images/e-commerce-back-end-screenshot.jpg")}
+              alt="E-Commerce Back-End"
+            ></img>
+          </a>
+          <p>
+            A Node.js backend database app that uses Express and MySql2 and can
+            be interacted with using Postman or Insomnia.{" "}
+            <a
+              href="https://github.com/MrMessyFace/e-commerce-back-end"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="E-Commerce Back-End GitHub Repo"
             >
               <i className="fa-brands fa-github" alt="Github"></i>
             </a>
           </p>
           <p>
-            Technologies used: Express.JS,{" "}
-            <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
-            <i className="fa-brands fa-css3" alt="CSS3" title="CSS 3"></i>,{" "}
+            Technologies used: Express.JS, Nodemon, MySQL2, Sequelize, DotENV,{" "}
             <i
               className="fa-brands fa-js"
               alt="JavaScript"
@@ -200,47 +310,73 @@ const Portfolio = () => {
           </p>
         </div>
         <div className="portfolio-item">
-          <h3>NetMinder</h3>
+          <h3>Employee Tracker</h3>
           <a
-            href="https://netminder-frontend-c2d1f8e64193.herokuapp.com/"
+            href="https://drive.google.com/file/d/1H8dcsMjENQv2zEfXL24NgO-ekdcEz6TH/view"
             target="_blank"
             rel="noopener noreferrer"
-            title="NetMinder"
+            title="Employee Tracker"
           >
             <img
-              src={require("../assets/images/netminder-screenshot.jpg")}
-              alt="NetMinder"
+              src={require("../assets/images/employee-tracker-screenshot.jpg")}
+              alt="Employee Tracker"
             ></img>
           </a>
           <p>
-            A professional networking reminder app that helps remind you to
-            contact colleagues or clients to further network yourself.{" "}
+            A Node.js database app that uses inquiries to help the user search
+            the database for a company.{" "}
             <a
-              href="https://github.com/React-Rangers/netminder-frontend"
+              href="https://github.com/MrMessyFace/employee-tracker"
               target="_blank"
               rel="noopener noreferrer"
-              title="NetMinder Front End GitHub Repo"
+              title="Employee Tracker GitHub Repo"
             >
-              <i className="fa-brands fa-github" alt="Github"></i>
-            </a>{" "}
+              <i className="fa-brands fa-github" alt="GitHub"></i>
+            </a>
+          </p>
+          <p>
+            Technologies used: Inquirer, Express.JS, MySQL2,{" "}
+            <i
+              className="fa-brands fa-js"
+              alt="Javascript"
+              title="JavaScript"
+            ></i>
+            , and{" "}
+            <i
+              className="fa-brands fa-node-js"
+              alt="Node.JS"
+              title="Node.JS"
+            ></i>
+            .
+          </p>
+        </div>
+        <div className="portfolio-item">
+          <h3>Note Taker</h3>
+          <a
+            href="https://notes-app-jg2023.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Note Taker"
+          >
+            <img
+              src={require("../assets/images/note-taker-screenshot.jpg")}
+              alt="Note Taker"
+            ></img>
+          </a>
+          <p>
+            A note taking app.{" "}
             <a
-              href="https://github.com/React-Rangers/netminder-backend"
+              href="https://github.com/MrMessyFace/note-taker"
               target="_blank"
               rel="noopener noreferrer"
-              title="NetMinder Back End GitHub Repo"
+              title="Note Taker GitHub Repo"
             >
               <i className="fa-brands fa-github" alt="Github"></i>
             </a>
           </p>
           <p>
-            Technologies used: Apollo, Ant Design, Express.JS, GraphQL, JSON Web
-            Token, MongoDB, Mongoose, React Router Dom,{" "}
-            <i
-              className="fa-brands fa-react"
-              alt="React JS"
-              title="React JS"
-            ></i>
-            , <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
+            Technologies used: Express.JS,{" "}
+            <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
             <i className="fa-brands fa-css3" alt="CSS 3" title="CSS 3"></i>,{" "}
             <i
               className="fa-brands fa-js"
