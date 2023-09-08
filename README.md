@@ -27,6 +27,6 @@ Code was recreated from [my previous portfolio project](https://github.com/MrMes
 ## Helpful Links
 
 - [Repository](https://github.com/MrMessyFace/jessie-galindo-react-portfolio)
-- [Live App](https://jessie-galindo-portfolio-fa0dd3079f8a.herokuapp.com/)
+- [Live App](https://www.jessiesgalindo.com/)
 
 &copy; 2023 Jessie S. Galindo. All Rights Reserved.
