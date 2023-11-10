@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pdf from "../assets/pdfs/jessie-galindo-resume.pdf";
+import pdf from "../assets/pdfs/jessiegalindo-resume.pdf";
 
 const Navbar = () => {
   return (
