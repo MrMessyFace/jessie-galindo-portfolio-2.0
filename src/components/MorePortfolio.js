@@ -6,6 +6,60 @@ const MorePortfolio = () => {
       <h2>More Portfolio</h2>
       <div className="portfolio-row">
         <div className="portfolio-item">
+          <h3>Note Taker</h3>
+          <a
+            href="https://notes-app-jg2023.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Note Taker"
+          >
+            <img
+              src={require("../assets/images/note-taker-screenshot.jpg")}
+              alt="Note Taker"
+            ></img>
+          </a>
+          <p>
+            A note taking app.{" "}
+            <a
+              href="https://github.com/MrMessyFace/note-taker"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Note Taker GitHub Repo"
+            >
+              <i className="fa-brands fa-github" alt="Github"></i>
+            </a>
+          </p>
+          <p>
+            Technologies used: Express.JS,{" "}
+            <i className="fa-brands fa-html5" alt="HTML5" title="HTML5"></i>,{" "}
+            <i className="fa-brands fa-css3" alt="CSS 3" title="CSS 3"></i>,{" "}
+            <i
+              className="fa-brands fa-js"
+              alt="JavaScript"
+              title="JavaScript"
+            ></i>
+            ,{" "}
+            <i
+              className="fa-brands fa-node-js"
+              alt="Node.JS"
+              title="Node.JS"
+            ></i>
+            ,{" "}
+            <i
+              className="fa-brands fa-bootstrap"
+              alt="Bootstrap"
+              title="Bootstrap"
+            ></i>
+            , and{" "}
+            <i
+              className="fa-brands fa-font-awesome"
+              alt="Font Awesome"
+              title="Font Awesome"
+            ></i>
+            .
+          </p>
+        </div>
+        <div className="portfolio-item">
           <h3>SVG Logo Maker</h3>
           <a
             href="https://drive.google.com/file/d/1dshjHGLKM7oI8R-j7-K8-0m57R6mfw_i/view"

@@ -21,7 +21,7 @@ const Navbar = () => {
             <a href="https://www.youtube.com/@IABProductions" target="blank" rel="noopener noreferrer">IAB Productions</a>
           </div>
         </div>
-        <a href={pdf} target="_blank" rel="noopener noreferrer">Résumé</a>
+        <a href={pdf} target="_blank" rel="noopener noreferrer">Resume</a>
       </nav>
     </nav>
   );
