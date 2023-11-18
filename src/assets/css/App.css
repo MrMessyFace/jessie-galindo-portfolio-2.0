@@ -101,17 +101,20 @@ body {
   font-size: 18px;
 }
 
-.home-page {
+.banner-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  text-align: center;
 }
 
 .banner h1 {
@@ -286,6 +289,20 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 992px) {
+  .banner-section {
+    height: 60vh;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 130px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -317,16 +334,8 @@ body {
     color: white;
   }
 
-  .home-page {
-    height: 100%;
-    width: 100%;
-  }
-
-  .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  .banner-section {
+    height: 50vh;
   }
 
   .banner h1 {
@@ -368,7 +377,7 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  
+
   .aboutimg {
     flex-direction: column;
     align-items: center;
@@ -376,7 +385,7 @@ body {
     margin-left: 0px;
     margin-right: 0px;
   }
-  
+
   .aboutimg img {
     max-height: 300px;
     border: 5px solid green;
@@ -384,14 +393,14 @@ body {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-  
+
   .aboutme {
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
-  
+
   .aboutme h3 {
     font-size: 30px;
   }
@@ -416,23 +425,23 @@ body {
     text-align: center;
     font-size: 18px;
   }
-  
+
   .contact-form {
     width: 90%;
   }
-  
+
   .contact-form Form {
     background-color: white;
     border: 5px solid green;
     border-radius: 10px;
     padding: 20px;
   }
-  
+
   .contact-info {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
 
@@ -449,8 +458,40 @@ body {
   .socials {
     margin: 5px;
   }
+}
 
-  .copyright {
-    font-size: 15px;
+@media screen and (max-width: 576px) {
+  .banner-section {
+    height: 50vh;
+  }
+
+  .about-section {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .aboutimg {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .aboutimg img {
+    max-height: 250px;
+    border: 5px solid green;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
