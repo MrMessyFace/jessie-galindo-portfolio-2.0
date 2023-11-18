@@ -101,6 +101,12 @@ body {
   font-size: 18px;
 }
 
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -311,20 +317,27 @@ body {
     color: white;
   }
 
-  .banner {
+  .home-page {
+    height: 100%;
     width: 100%;
-    margin-top: 200px;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
   }
 
   .banner h1 {
-    font-size: 55px;
-    -webkit-text-stroke: 1.5px white;
+    font-size: 50px;
+    -webkit-text-stroke: 1px white;
     text-align: center;
   }
 
   .banner h2 {
-    font-size: 35px;
-    -webkit-text-stroke: 1.25px green;
+    font-size: 30px;
+    -webkit-text-stroke: 0px green;
     text-align: center;
   }
 
