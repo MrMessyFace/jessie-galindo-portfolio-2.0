@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Freelancing from "../components/Freelancing";
 import pdf from "../assets/pdfs/jessie-galindo-resume.pdf";
 
 const Navbar = () => {
@@ -18,8 +17,9 @@ const Navbar = () => {
         </div>
       </nav>
       <nav className="navbar-right">
-        <Link to="/about">About</Link>•<Link to="/portfolio">Portfolio</Link>•
-        <Link to="/contact">Contact</Link>•
+        <Link to="/about">About</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/contact">Contact</Link>
         <div className="dropdown-menu">
           <button className="dropdown-button">Outside Work</button>
           <div className="dropdown-content">
@@ -39,14 +39,10 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        •
         <a href={pdf} target="_blank" rel="noopener noreferrer">
           Resume
         </a>
-        •
-        <div>
-          <Freelancing />
-        </div>
+        <Link to="/freelance">Freelancing</Link>
       </nav>
     </nav>
   );
