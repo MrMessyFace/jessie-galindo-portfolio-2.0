@@ -131,6 +131,7 @@ body {
 .about-section,
 .portfolio-section,
 .contact-section,
+.freelancing-section,
 .not-found-section {
   display: flex;
   flex-direction: column;
@@ -139,7 +140,8 @@ body {
 
 .about-section h2,
 .portfolio-section h2,
-.contact-section h2 {
+.contact-section h2,
+.freelancing-section h2 {
   font-size: 80px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -179,7 +181,8 @@ body {
   font-size: 22px;
 }
 
-.portfolio-row {
+.portfolio-row,
+.freelancing-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -238,6 +241,77 @@ body {
   justify-content: space-evenly;
   width: 500px;
   margin-top: 100px;
+}
+
+.freelancing-item-wide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: green;
+  border: 5px solid white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  width: 1070px;
+  margin-bottom: 10px;
+}
+
+.freelancing-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: green;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 15px;
+  width: 350px;
+}
+
+.freelancing-item-tail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 1070px;
+}
+
+.wide-content {
+  margin-bottom: 10px;
+}
+
+.free-content-one {
+  margin-bottom: 32px;
+}
+
+.free-content-two {
+  margin-bottom: 10px;
+}
+
+.free-content-three {
+  margin-bottom: 55px;
+}
+
+.wide-content p,
+.free-content-one p,
+.free-content-two p,
+.free-content-three p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wide-price,
+.price {
+  margin-top: 0px;
+}
+
+.wide-price h3,
+.price h3 {
+  font-size: 24px;
 }
 
 .not-found-section h1 {
